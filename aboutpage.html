@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            background-color: #fadae5;
+        }
+        .heading{
+            text-align: center;
+            margin-top: 25px;
+        }
+        .heading h1{
+            font-size: 50px;
+            color: #36455c;
+            margin-bottom: 10px;
+        }
+        .heading p{
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 50px;
+        }
+        .about-us{
+            display: flex;
+            align-items: center;
+            width: 85%;
+            margin: auto;
+        }
+        .about-us img{
+            flex: 0 50%;
+            max-width: 50%;
+            height:450px;
+        }
+        .content{
+            padding: 35px;
+        }
+        .content h2{
+            color: #36455c;
+            font-size: 24px;
+            margin: 15px 0px;
+        }
+        .content p{
+            color: #666;
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 15px 0px;
+        }
+        .read-more-btn{
+            display: inline-block;
+            color: #fff;
+            background-color: #b36982;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.2s ease;
+        }
+        .read-more-btn:hover{
+            background-color: #8f5f6f;
+        }
+        @media(max-width:768px){
+            .about-us{
+                flex-direction: column;
+            }
+            .about-us{
+                flex:0 100%;
+                max-width: 100%;
+            }
+            .content{
+                flex: 0 100%;
+                max-width: 100%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>About Us</h1>
+        <p> Flower Aura</p>
+    </div>
+    <section class="about-us">
+        <img src="https://img.freepik.com/free-vector/protective-glass-counters_52683-38437.jpg">
+        <div class="content">
+            <h2>Flower Aura</h2>
+            <p>Flowers make one of the most amazing gifts on any occasion. To make those special occasions more beautiful
+                 and memorable for you, FlowerAura brings your online flower delivery in Thrissur, from where you can order
+                  or book flowers for anyone and on any occasion. Our flower shop in Thrissur offers you a variety of beautiful
+                   flower arrangements that can make the best gift for your loved ones, such as rose flowers, carnation flowers,
+                    lily flowers, orchid flowers, gerbera flowers, and mixed flowers.</p>
+            <button class="read-more-btn">Read More</button>
+        </div>
+    </section>
+</body>
+</html>

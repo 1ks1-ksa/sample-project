@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/de1d01ded7.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        section{
+            width: 100%;
+            height: 100vh;
+        }
+        section header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3 );
+        }
+        section header .logo{
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        section header .logo span{
+            color:#f9004d
+        }
+        section header ul{
+            list-style: none;
+        }
+        section header ul li{
+            display: inline-block;
+            margin: 5px 5px;
+            padding: 5px 20px;
+            position: relative;
+        }
+        section header ul li  a{
+            color: black;
+            text-decoration: none;
+        }
+        section header ul li a:hover{
+            color: #f9004d;
+        }
+        section header p{
+            cursor: pointer;
+            padding: 10px 25px;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            transition: 0.3s;
+        }
+        section header p:hover{
+            color: white;
+            background: #b36982;
+        }
+        .circle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(179,105,130);
+            clip-path: circle(320px at left -230px);
+            z-index: -1;
+        }
+        .circles{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #b36982;
+            clip-path: circle(250px at right 800px);
+            z-index: -1;
+        }
+        .dropdown{
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 100%;
+        }
+        .dropdown ul {
+            display: block;
+            margin: 10px;
+        }
+        .dropdown ul li{
+            width: 150px;
+            padding: 10px;
+        }
+        section .texts h1{
+            position: absolute;
+            top: 30%;
+            left: 4%;
+            font-size: 100px;
+            color: #6a6666;
+        }
+        section .texts h1 span{
+            color: #b36982;
+        }
+        section .texts p{
+            width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 4%;
+            line-height: 26px;
+            text-align: justify;
+        }
+        section .background-image img{
+            width: 750px;
+            position: absolute;
+            top: 25%;
+            left: 47%;
+            margin-left: 25px;
+        }
+        section .btn{
+            position: relative;
+            top: 77%;
+            left: 38px;
+            width: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        section .btn .read{
+            background: #b36982;
+            color: white;
+            cursor: pointer;
+        }
+        section .btn a{
+            padding: 10px 25px;
+            background: none;
+            border: 2px solid #b36982;
+            cursor: pointer;
+        } 
+
+
+    </STYLE>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="circle"></div>
+            <div class="circles"></div>
+            <a href="#" class="logo">SHOP<span>ifty</span></a>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html">HOME</a></li>
+                <li><a href="http://127.0.0.1:5500/aboutpage.html">ABOUT</a></li>
+                <li><a href="http://127.0.0.1:5500/register.html">REGISTER</a></li> 
+                <li><a href="http://127.0.0.1:5500/product.html">PRODUCTS</a></li>
+                <li><a href="http://127.0.0.1:5500/contact.html">CONTACT</a></li>
+            </ul>
+            <P>SIGN UP</P>
+        </header>
+
+
+        <div class="texts">
+            <h1>Flower<span> Aura</span></h1>
+            <p>Convey your heartiest wishes to your near and dear ones all year round on special occasions with FlowerAura's online flower delivery in Thrissur, Kerala. Ranging from lilies to tulips to roses to orchids, you will find flowers of every type for every occasion. We offer same day and midnight flower delivery in Thrissur.</p>
+        </div>
+
+        <div class="background-image">
+            <img src="bg1.png">
+        </div>
+        <div class="btn">
+            <a href="http://127.0.0.1:5500/aboutpage.html" class="read">READ MORE</a>
+            <a href="http://127.0.0.1:5500/product.html">SHOP NOW</a>
+        </div>
+    </section>
+
+
+
+
+    
+</body>
+</html>
+
